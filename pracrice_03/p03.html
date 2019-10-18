@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>احمد نصرتیان</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Tabel A - Tabel B -->
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 from-group">
+      <h3 class="alert-warning text-center">تخصیص ارقام تصادفی برای تعیین نوع روز</h3>
+    </div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+    <div class="col-1">
+
+    </div>
+    <div class="col-10">
+      <table class="table text-center table-bordered">
+        <thead class="">
+          <tr>
+            <th scope="col">تخصیص ارقام تصادفی</th>
+            <th scope="col">احتمال تجمعی</th>
+            <th scope="col">احتمال</th>
+            <th scope="col">نوع روز</th>
+          </tr>
+        </thead>
+        <tbody id="tbody_Table_A">
+          <tr>
+            <td>01-35</td>
+            <td>0.35</td>
+            <td>0.35</td>
+            <td>خوب</td>
+          </tr>
+          <tr>
+            <td>36-80</td>
+            <td>0.80</td>
+            <td>0.45</td>
+            <td>متوسط</td>
+          </tr>
+          <tr>
+            <td>81-100</td>
+            <td>1.00</td>
+            <td>0.20</td>
+            <td>بد</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-5 from-group">
+      <h3 class="alert-warning text-center">تخصیص ارقام تصادفی برای روزنامههای مورد تقاضا</h3>
+    </div>
+    <div class="col"></div>
+  </div>
+  <div class="row">
+      <div class="col-1">
+
+        </div>
+    <div class="col-10">
+      <table class="table text-center  table-bordered">
+        
+        <thead class="">
+          <tr>
+            <th scope="col" colspan="3">تخصیص اعداد تصادفی</th>
+            <th scope="col" colspan="3">توزیع تجمعی</th>
+            <th scope="col">تقاضا</th>
+          </tr>
+          <tr>
+            <th scope="col">بد</th>
+            <th scope="col">متوسط</th>
+            <th scope="col">خوب</th>
+            <!--  -->
+            <th scope="col">بد</th>
+            <th scope="col">متوسط</th>
+            <th scope="col">خوب</th>
+            <!--  -->
+            <th scope="col">----</th>
+          </tr>
+        </thead>
+        <tbody id="tbody_Table_B">
+          <tr>
+            <td>01-44</td>
+            <td>01-10</td>
+            <td>01-03</td>
+            <td>0.44</td>
+            <td>0.10</td>
+            <td>0.03</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>45-66</td>
+            <td>11-28</td>
+            <td>04-08</td>
+            <td>0.66</td>
+            <td>0.28</td>
+            <td>0.08</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>67-82</td>
+            <td>29-68</td>
+            <td>09-23</td>
+            <td>0.82</td>
+            <td>0.68</td>
+            <td>0.23</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>83-82</td>
+            <td>69-88</td>
+            <td>24-43</td>
+            <td>0.96</td>
+            <td>0.88</td>
+            <td>0.43</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>95-100</td>
+            <td>89-96</td>
+            <td>44-78</td>
+            <td>1.00</td>
+            <td>0.96</td>
+            <td>0.78</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>--</td>
+            <td>97-100</td>
+            <td>79-93</td>
+            <td>1.00</td>
+            <td>1.00</td>
+            <td>0.93</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>--</td>
+            <td>--</td>
+            <td>94-100</td>
+            <td>1.00</td>
+            <td>1.00</td>
+            <td>1.00</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  </div>
+  <br>
+  <!-- Tabel X -->
+  <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4 from-group">
+        <h3 class="alert-warning text-center">شبیه سازی برای خرید 70 روزنامه</h3>
+      </div>
+      <div class="col"></div>
+    </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <table class="table text-center  table-bordered">
+        
+        <thead class="">
+          <tr>
+            <th scope="col">سود روزانه</th>
+            <th scope="col">درآمد ناشی از فروش باطله</th>
+            <th scope="col">سود از دست رفته</th>
+            <th scope="col">درآمد حاصل از فروش</th>
+            <th scope="col">تقاضا</th>
+            <th scope="col">ارقام تصادفی برای تقاضا</th>
+            <th scope="col">نوع روز</th>
+            <th scope="col">ارقام تصادفی برای تعیین نوع روز</th>
+            <th scope="col">روز</th>
+          </tr>
+        </thead>
+        <tbody id="tbody_simulation">
+
+        </tbody>
+      </table>
+    </div>
+    <div class="col-3"></div>
+  </div>
+  <script>
+
+    var buy_newspaper = 70;
+
+    function Value_day(key) {
+      var res = "";
+      if (key >= 1 && key <= 35) res = "خوب";
+      else if (key >= 36 && key <= 80) res = "متوسط";
+      else if (key >= 81 && key <= 100) res = "بد";
+      return res;
+    }
+
+
+
+    // Tabel B
+
+    function value_request(key_B, req_str) {
+
+      //  Tabel B 
+      var res_B = "";
+      if (req_str === "خوب") {
+        if (key_B >= 1 && key_B <= 3) res_B = 40;
+        else if (key_B >= 4 && key_B <= 8) res_B = 50;
+        else if (key_B >= 9 && key_B <= 23) res_B = 60;
+        else if (key_B >= 24 && key_B <= 43) res_B = 70;
+        else if (key_B >= 44 && key_B <= 78) res_B = 80;
+        else if (key_B >= 79 && key_B <= 93) res_B = 90;
+        else if (key_B >= 94 && key_B <= 100) res_B = 100;
+      }
+      else if (req_str === "متوسط") {
+        if (key_B >= 1 && key_B <= 10) res_B = 40;
+        else if (key_B >= 11 && key_B <= 28) res_B = 50;
+        else if (key_B >= 29 && key_B <= 68) res_B = 60;
+        else if (key_B >= 69 && key_B <= 88) res_B = 70;
+        else if (key_B >= 89 && key_B <= 96) res_B = 80;
+        else if (key_B >= 97 && key_B <= 100) res_B = 90;
+      
+      }
+      else if (req_str === "بد") {
+        if (key_B >= 1 && key_B <= 44) res_B = 40;
+        else if (key_B >= 45 && key_B <= 66) res_B = 50;
+        else if (key_B >= 67 && key_B <= 82) res_B = 60;
+        else if (key_B >= 83 && key_B <= 94) res_B = 70;
+        else if (key_B >= 95 && key_B <= 100) res_B = 80;
+      
+      }
+      return res_B.toString();
+    }
+    
+    //Tabel X
+    let strInnerHtml_X = "";
+    let counter_X = 20;
+   
+    for (let index = 1; index <= counter_X; index++) {
+      strInnerHtml_X += "<tr><td id='dayily_profit_" + index + "'></td><td id='income_tailing_" + index + "'></td><td id='incresing_request_" + index + "'></td><td id='income_money_" + index + "'></td><td id='request_value_str_" + index + "'></td><td id='request_value_int_" + index + "'>" + Math.ceil(Math.random() * (100 - 1) + 1).toString() + "</td><td id='day_value_str_" + index + "' ></td><td id='day_value_int_" + index + "'>" + Math.ceil(Math.random() * (100 - 1) + 1).toString() + "</td><td>" + index + "</td></tr>";
+      document.getElementById("tbody_simulation").innerHTML = strInnerHtml_X;
+    }
+
+    for (let index = 1; index <= counter_X; index++) {
+      document.getElementById("day_value_str_" + index + "").innerText = Value_day(Number(document.getElementById("day_value_int_" + index + "").innerText));
+    }
+
+    for (let index = 1; index <= counter_X; index++) {
+      document.getElementById("request_value_str_" + index + "").innerText = value_request(Number(document.getElementById("request_value_int_" + index + "").innerText), document.getElementById("day_value_str_" + index + "").innerText);
+
+      let b_n = Number(document.getElementById("request_value_str_" + index + "").innerText)
+      if (b_n >= 0 && b_n <= buy_newspaper) {
+
+        document.getElementById("income_money_" + index + "").innerText = b_n * 20;
+
+        document.getElementById("incresing_request_" + index + "").innerText = 0;
+
+        document.getElementById("income_tailing_" + index + "").innerText = (buy_newspaper - b_n) * 2;
+
+
+      }
+      else if (b_n > buy_newspaper) {
+        document.getElementById("income_money_" + index + "").innerText = buy_newspaper * 20;
+        
+        document.getElementById("incresing_request_" + index + "").innerText = (b_n - buy_newspaper) * 7;
+
+        document.getElementById("income_tailing_" + index + "").innerText = 0;
+      }
+
+      document.getElementById("dayily_profit_" + index + "").innerText = (Number(document.getElementById("income_money_" + index + "").innerText) - Number(910) - Number(document.getElementById("incresing_request_" + index + "").innerText) + Number(document.getElementById("income_tailing_" + index + "").innerText))
+    }
+
+  </script>
+
+
+
+
+</body>
+
+</html>
